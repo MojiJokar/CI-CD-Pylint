@@ -8,7 +8,7 @@ jobs:
         os: [ubuntu-latest, ubuntu-22.04]
     steps:
       - name: echo a string
-        run: echoOO " Test  Action_runner_debug"
+        run: echoOO " Test  Action_runner_debug"  # Throw error we can see it  in Debug mode config!
       - name: multiline script
         run: |
           python3 -V
