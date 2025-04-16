@@ -6,6 +6,10 @@ on:
   pull_request:
     branches: [ main ]
 
+permissions:
+  contents: write
+  statuses: write
+
 jobs:
   super-lint:
     name: Lint code base
@@ -17,10 +21,8 @@ jobs:
           fetch-depth: 0
 
       - name: Run Super Linter
-        uses: super-linter/super-linter@v6.3.0
+        uses: super-linter/super-linter@v7.3.0
         env:
-          DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          VALIDATE_ALL_CODEBASE: true
-          FILTER_REGEX_EXCLUDE: '.*\.md$'
+          DEFAULT_BRANCH: main
 
