@@ -1,4 +1,4 @@
-# CI-CD-Pylint: Simple practice on Actions in GitHub and familar better
+# CI-CD-Pylint: Simple practice on Actions in GitHub and controls the quality of your code with Flake8
 More Practise on some workflows suggested in  GitHub.\n
 # Github Actions CI/CD
 summary:
